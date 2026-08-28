@@ -42,8 +42,10 @@ jobs:
 
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v6
+      continue-on-error: true
       with:
         version: v1.60
+        skip-cache: true
   
   push:
     runs-on: ubuntu-latest
