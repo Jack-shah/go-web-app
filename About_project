@@ -51,10 +51,21 @@ then paste the PAT
 
     so we were able to access the application from windows browser:
 
-    =====================
+===================
     Now we will convert our project into helmchart use k8s docs on gdrive
     we successfully achieved this target
 
+Next target ic CI part(build, test,static code test, and will docker image and will push it to dockerhub)
+using github actions
 
-    
+Github action is nothing more than..... a -jenkins build job...... in jenkins we used jenkinsfile  for pipeline a project ....... here we will be using .github/workflows/gihubpipeline.yaml.............
+
+why  github watch for this file read it and trigger the job based on defined trigger in the file
+you can learn more on github action on my documentation  file names git on google drive....
+
+
+
+
+
+
 
