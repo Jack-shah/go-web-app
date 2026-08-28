@@ -1,4 +1,4 @@
-# CICD using GitHub actions
+# CICD using GitHub actions.
 
 name: CI/CD
 
@@ -8,9 +8,10 @@ on:
     branches:
       - main
     paths-ignore:
-      - 'helm/**'
+      - 'go-web-app/**'
       - 'k8s/**'
       - 'README.md'
+      - 'About_project'
 
 jobs:
 
@@ -83,7 +84,7 @@ jobs:
 
     - name: Update tag in Helm chart
       run: |
-        sed -i 's/tag: .*/tag: "${{github.run_id}}"/' helm/go-web-app/values.yaml
+        sed -i 's/tag: .*/tag: "${{github.run_id}}"/' go-web-app/go-web-app/values.yaml
 
     - name: Commit and push changes
       run: |
